@@ -7,17 +7,31 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     defaults:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+
       - name: FTP Deployment
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          server: ${{ secrets.ftp_server_production }}
+          server:   ${{ secrets.ftp_server_production }}
           username: ${{ secrets.ftp_user_production }}
           password: ${{ secrets.ftp_password_production }}
           protocol: ftps
+          # port: 21   # Vimexx/FTP gebruikt meestal 21; alleen invullen als je host iets anders zegt. :contentReference[oaicite:3]{index=3}
+          server-dir: /domains/igniteone.nl/public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
+            **/.DS_Store
+            **/media/**        # Kirby: gegenereerde thumbs/cache
+            **/.env            # als je die gebruikt
+            **/storage/**      # als je die hebt
+          # dry-run: true      # ← eerste keer handig om te testen (geen echte upload). :contentReference[oaicite:4]{index=4}

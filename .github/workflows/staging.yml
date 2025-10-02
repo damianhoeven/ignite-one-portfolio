@@ -6,17 +6,40 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: staging-deploy
+      cancel-in-progress: true
     defaults:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - name: FTP Deployment
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+          # Als je Kirby of plugins als submodule gebruikt, zet dit aan:
+          # submodules: true
+
+      - name: FTP Deployment (staging)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          server: ${{ secrets.ftp_server_staging }}
+          server:   ${{ secrets.ftp_server_staging }}
           username: ${{ secrets.ftp_user_staging }}
           password: ${{ secrets.ftp_password_staging }}
           protocol: ftps
+          # port: 21  # alleen invullen als jouw host iets anders vereist
+          server-dir: /domains/staging.igniteone.nl/public_html/  # trailing slash!
+
+          # Eerste keer testen? Zet aan, bekijk de logs, haal daarna weg:
+          # dry-run: true
+
+          # Let op: omdat je exclude opgeeft, herhaal je ook de defaults
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
+            **/.DS_Store
+            **/media/**           # Kirby: gegenereerde thumbs/cache
+            **/site/cache/**      # als je deze map hebt
+            **/storage/**         # als je deze gebruikt
