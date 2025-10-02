@@ -1,0 +1,23 @@
+name: Production Deployment
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: FTP Deployment
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.ftp_server_production }}
+          username: ${{ secrets.ftp_user_production }}
+          password: ${{ secrets.ftp_password_production }}
+          protocol: ftps
