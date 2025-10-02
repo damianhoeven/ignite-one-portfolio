@@ -1,0 +1,112 @@
+Title: Algemene voorwaarden
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "text": "<h2>Toepasselijkheid</h2><ol><li><p>Deze algemene voorwaarden zijn van toepassing op alle diensten die worden geleverd door Ignite One, hierna aangeduid als \"de Dienstverlener\".</p></li><li><p>Door gebruik te maken van de diensten van de Dienstverlener gaat de Klant akkoord met deze algemene voorwaarden.</p></li></ol><h2>Offertes en Overeenkomsten</h2><ol><li><p>Alle offertes zijn vrijblijvend, tenzij anders vermeld.</p></li><li><p>Een overeenkomst komt tot stand op het moment dat de Klant akkoord gaat met een offerte van de Dienstverlener.</p></li><li><p>Wijzigingen of aanvullingen op de overeenkomst zijn alleen geldig indien deze schriftelijk zijn overeengekomen.</p></li></ol><h2>Dienstverlening</h2><ol><li><p>De Dienstverlener zal zich inspannen om de overeengekomen diensten naar beste vermogen uit te voeren.</p></li><li><p>De Dienstverlener behoudt zich het recht voor om derden in te schakelen voor de uitvoering van de diensten, indien nodig</p></li><li><p>De Klant is verantwoordelijk voor het tijdig aanleveren van alle benodigde materialen en informatie die nodig zijn voor de uitvoering van de diensten.</p></li></ol><h2>Betaling</h2><ol><li><p>Betaling dient te geschieden binnen 30 dagen na factuurdatum, tenzij anders overeengekomen.</p></li><li><p>Bij niet-tijdige betaling is de Klant van rechtswege in verzuim, zonder dat een nadere ingebrekestelling is vereist.</p></li><li><p>Bij verzuim is de Klant een rente verschuldigd van 12,5% per maand over het openstaande bedrag.</p></li><li><p>Alle gerechtelijke en buitengerechtelijke kosten die de Dienstverlener maakt ter inning van zijn vordering komen voor rekening van de Klant.</p></li></ol><h2>Intellectuele Eigendom</h2><ol><li><p>Alle intellectuele eigendomsrechten met betrekking tot de door de Dienstverlener geleverde diensten en producten, zoals web design, videografie, fotografie en muziek productie, blijven bij de Dienstverlener, tenzij anders overeengekomen.</p></li><li><p>De Klant verkrijgt slechts een gebruiksrecht op de geleverde diensten en producten, zoals overeengekomen in de overeenkomst.</p></li></ol><h2>Aansprakelijkheid</h2><ol><li><p>De Dienstverlener is niet aansprakelijk voor enige schade die voortvloeit uit of verband houdt met het gebruik van de geleverde diensten, tenzij er sprake is van opzet of grove nalatigheid aan de zijde van de Dienstverlener.</p></li><li><p>De aansprakelijkheid van de Dienstverlener is beperkt tot het bedrag dat door de aansprakelijkheidsverzekering van de Dienstverlener wordt gedekt.</p></li></ol><h2>Overmacht</h2><ol><li><p>De Dienstverlener is niet gehouden tot het nakomen van enige verplichting indien hij daartoe gehinderd wordt als gevolg van een omstandigheid die niet is te wijten aan zijn schuld, noch krachtens de wet, een rechtshandeling of in het verkeer geldende opvattingen voor zijn rekening komt.</p></li></ol><h2>Toepasselijk Recht en Geschillen</h2><ol><li><p>Op deze algemene voorwaarden en alle overeenkomsten die daaruit voortvloeien, is uitsluitend het Nederlands recht van toepassing.</p></li><li><p>Geschillen voortvloeiend uit of verband houdend met deze algemene voorwaarden of de overeenkomst zullen worden voorgelegd aan de bevoegde rechter in Naaldwijk, Nederland.</p></li><li><p>Door gebruik te maken van de diensten van de Dienstverlener verklaart de Klant akkoord te gaan met deze algemene voorwaarden.</p></li></ol>",
+            "colortheme": "false",
+            "paddingbottom": "true"
+        },
+        "id": "c33f3756-cf96-4f9b-bda1-be0164605ceb",
+        "isHidden": false,
+        "type": "richtext"
+    }
+]
+
+----
+
+Subtitle: 
+
+----
+
+Pageimage: 
+
+----
+
+Headerrowsmall: true
+
+----
+
+Colortheme: true
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Importhtml:
+
+<h2>4. Betaling</h2>
+
+<p>4.1 Betaling dient te geschieden binnen 30 dagen na factuurdatum, tenzij anders overeengekomen.</p>
+
+<p>4.2 Bij niet-tijdige betaling is de Klant van rechtswege in verzuim, zonder dat een nadere ingebrekestelling is vereist.</p>
+
+<p>4.3 Bij verzuim is de Klant een rente verschuldigd van 12,5% per maand over het openstaande bedrag.</p>
+
+<p>4.4 Alle gerechtelijke en buitengerechtelijke kosten die de Dienstverlener maakt ter inning van zijn vordering komen voor rekening van de Klant.</p>
+
+----
+
+Uuid: ng9fh0ynmqvf8bda

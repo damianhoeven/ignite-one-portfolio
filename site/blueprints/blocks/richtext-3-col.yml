@@ -1,0 +1,54 @@
+name: Rich text (3 columns)
+icon: text
+preview: fields
+fields:
+  textCol1:
+    label: Tekst
+    type: writer
+    placeholder: Schrijf hier je tekst…
+    nodes:
+      - paragraph
+      - heading
+      - bulletList
+      - orderedList
+      - horizontalRule
+    headings: [2,3,4]
+    marks: [bold, italic, underline, link, "|", clear]
+  textCol2:
+    label: Tekst
+    type: writer
+    placeholder: Schrijf hier je tekst…
+    nodes:
+      - paragraph
+      - heading
+      - bulletList
+      - orderedList
+      - horizontalRule
+    headings: [2,3,4]
+    marks: [bold, italic, underline, link, "|", clear]
+  textCol3:
+    label: Tekst
+    type: writer
+    placeholder: Schrijf hier je tekst…
+    nodes:
+      - paragraph
+      - heading
+      - bulletList
+      - orderedList
+      - horizontalRule
+    headings: [2,3,4]
+    marks: [bold, italic, underline, link, "|", clear]
+
+  colorTheme:
+    label: Thema
+    type: toggle
+    default: false
+    text: [Licht, Donker]
+    width: 1/2
+
+  paddingBottom:
+    label: Padding bottom
+    type: toggle
+    default: false
+    text: [Uit, Aan]
+    width: 1/2

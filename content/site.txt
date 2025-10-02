@@ -1,0 +1,79 @@
+Title: Ignite One
+
+----
+
+Mainmenu:
+
+- 
+  label: Projects
+  link: page://uy6psblpouuarmod
+- 
+  label: About
+  link: page://dep6jnlfkll81nsu
+- 
+  label: Contact
+  link: page://ztpew6tpwkxe3lth
+
+----
+
+Footermenu:
+
+- 
+  label: Algemene voorwaarden
+  link: page://ng9fh0ynmqvf8bda
+
+----
+
+Metatemplate: 
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogsitename: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: true
+
+----
+
+Robotsindex: 
+
+----
+
+Robotsfollow: 
+
+----
+
+Robotsarchive: 
+
+----
+
+Robotsimageindex: 
+
+----
+
+Robotssnippet: 
+
+----
+
+Socialmediaaccounts: 
+
+----
+
+Instagram: igniteone.media

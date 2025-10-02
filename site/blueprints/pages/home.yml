@@ -1,0 +1,108 @@
+title: Home
+options:
+  changeTemplate: false
+
+tabs:
+  content:
+    label: Content
+    icon: home
+    columns:
+      - width: 1
+        sections:
+          hero:
+            type: fields
+            fields:
+              hero_headline:
+                type: headline
+                label: Hero
+
+              Herotitle:
+                label: Titel
+                type: textarea
+                buttons: false
+                help: Wordt gebruikt als h1 in de hero-sectie
+                width: 1/2
+                buttons:
+                  - italic
+
+              Heroparagraph:
+                label: Paragraaf
+                type: textarea
+                buttons: false
+                help: Intro tekst onder de titel in de hero
+                width: 1/2
+
+          skills:
+            type: fields
+            fields:
+              skills_headline:
+                type: headline
+                label: Skills
+
+              Skillstitle:
+                label: Titel
+                type: text
+                width: 1/4
+
+              Skillslist:
+                label: Lijst
+                type: structure
+                width: 3/4
+                fields:
+                  label:
+                    label: Weergavenaam
+                    type: text
+                    required: true
+
+                  skillpage:
+                    label: Pagina
+                    type: pages
+                    multiple: false
+
+          about:
+            type: fields
+            fields:
+              about_headline:
+                type: headline
+                label: Over mij
+
+              Abouttitle:
+                label: Titel
+                type: text
+                width: 1/4
+
+              Aboutintro:
+                label: Intro Over Mij
+                type: textarea
+                buttons: false
+                width: 3/4
+
+          projecten:
+            type: fields
+            fields:
+              projects_headline:
+                type: headline
+                label: Projecten
+
+              Projectstitle:
+                label: Titel
+                type: textarea
+                width: 1/4
+                buttons: false
+                buttons:
+                  - italic
+
+              ProjectsPages:
+                label: Showcase Projecten
+                type: structure
+                width: 3/4
+                fields:
+                  project:
+                    label: Gekoppeld project
+                    type: pages
+                    multiple: false
+                    required: true
+                    query: site.index.filterBy('template', 'project')
+                    help: Alleen pagina’s met het template “project”
+  
+  seo: seo/page

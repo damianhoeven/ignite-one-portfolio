@@ -1,0 +1,147 @@
+title: Site
+
+tabs:
+  dashboard:
+    label: Dashboard
+    icon: dashboard
+    columns:
+      - width: 1/2
+        sections:
+          listedCore:
+            label: Hoofdpagina's
+            type: pages
+            templates:
+              - home
+              - about
+              - projects
+              - contact
+            sortBy: title asc
+            info: "{{ page.id }}"
+
+          projectsPublished:
+            label: Projecten (Online)
+            type: pages
+            parent: site.find("projects")   # wijzig indien jouw parent anders heet
+            templates: [project]
+            status: listed, unlisted                      # listed + unlisted (geen drafts)
+            sortBy: date desc
+            info: "/{{ page.slug }}"
+            create:
+              - project
+
+      - width: 1/2
+        sections:
+          recent:
+            label: Laatst gewijzigd
+            type: pages
+            query: site.index
+            sortBy: modified desc
+            limit: 10
+            info: >
+              {{ page.isDraft ? "📝 draft" : (page.isListed ? "✅ Online" : "🙈 unlisted") }} · {{ page.modified('d-m-Y H:i') }}
+
+          projectsDrafts:
+            label: Projecten (Concepten)
+            type: pages
+            parent: site.find("projects")
+            templates: [project]
+            status: draft
+            sortBy: modified desc
+            info: "📝 draft · /{{ page.slug }}"
+
+          uncategorized:
+            label: Ongecategoriseerd
+            type: pages
+            status: all
+            # Alle top-level pagina's behalve de bekende templates
+            query: site.children.filterBy("template", "not in", ["home","about","projects","contact","project"])
+            sortBy: title asc
+            empty: Geen ongecategoriseerde pagina's gevonden.
+            create:
+              - default
+
+          recentFiles:
+            label: Nieuwe bestanden
+            type: files
+            query: site.files
+            sortBy: modified desc
+            limit: 8
+            info: "{{ file.niceSize }} · {{ file.modified('d-m-Y H:i') }}"
+
+  pageOverview:
+    label: Pagina's
+    icon: page
+    sections:
+      listedPages:
+        label: Hoofdpagina's
+        type: pages
+        templates:
+          - home
+          - about
+          - projects
+          - contact
+        sortBy: title asc
+        info: "/{{ page.slug }}"
+
+      projects:
+        label: Projecten
+        type: pages
+        parent: site.find("projects")
+        templates: [project]
+        status: all
+        sortBy: date desc
+        info: "/{{ page.slug }}"
+
+      defaultPages:
+        label: Content pagina's
+        type: pages
+        status: all
+        query: site.children.filterBy("template", "not in", ["home", "about", "projects", "contact", "project"])
+        sortBy: title asc
+        info: "/{{ page.slug }}"
+        create:
+          - default
+
+      defaultDrafts:
+        label: Content pagina's (concepten)
+        type: pages
+        status: draft
+        query: site.drafts.filterBy("template", "not in", ["home","about","projects","contact","project"])
+        sortBy: modified desc
+        empty: Geen concepten gevonden.
+        info: "/{{ page.slug }}"
+        create:
+          - default
+
+  menu:
+    label: Menu's
+    icon: menu
+    fields:
+      mainMenu:
+        label: Main
+        type: structure
+        fields:
+          label:
+            label: Naam
+            type: text
+          link:
+            label: Link
+            type: link
+            options:
+              - page
+              - url
+
+      footerMenu:
+        label: Footer
+        type: structure
+        fields:
+          label:
+            label: Naam
+            type: text
+          link:
+            label: Link
+            type: link
+            options:
+              - page
+              - url
+  seo: seo/site

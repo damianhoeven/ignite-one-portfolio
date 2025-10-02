@@ -1,0 +1,9 @@
+Alt: 
+
+----
+
+Uuid: tufrqg2ik0laf8zz
+
+----
+
+Template: blocks/image

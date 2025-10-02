@@ -1,0 +1,105 @@
+Title: Test project
+
+----
+
+Blocks: 
+
+----
+
+Subtitle: 
+
+----
+
+Text: 
+
+----
+
+Pageimage: 
+
+----
+
+Clientlogo: 
+
+----
+
+Services: 
+
+----
+
+Client: 
+
+----
+
+Link: 
+
+----
+
+Year: 
+
+----
+
+Featured: false
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: ep66c0mfizkytnli

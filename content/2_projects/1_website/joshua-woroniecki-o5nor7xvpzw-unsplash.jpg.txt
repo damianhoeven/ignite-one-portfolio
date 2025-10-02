@@ -1,0 +1,9 @@
+Alt: 
+
+----
+
+Uuid: ibjlputm2siuiz8r
+
+----
+
+Template: blocks/image

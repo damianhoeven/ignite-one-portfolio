@@ -1,0 +1,56 @@
+name: Image big
+icon: image
+preview: image
+fields:
+  location:
+    label: Bron
+    type: radio
+    columns: 2
+    default: kirby
+    required: true
+    options:
+      kirby: Upload
+      web: Web-URL
+
+  image:
+    label: Afbeelding
+    type: files
+    multiple: false
+    query: model.images
+    when:
+      location: kirby
+    layout: cards
+    size: large
+    image:
+      ratio: 16/9
+      cover: true
+    uploads:
+      template: blocks/image
+
+  src:
+    label: Afbeelding URL
+    type: url
+    when:
+      location: web
+
+  alt:
+    label: Alt-tekst
+    type: text
+
+  paddingBottom:
+    label: Padding bottom
+    type: toggle
+    default: false
+    text:
+      - Uit
+      - Aan
+    width: 1/2
+
+  colorTheme:
+    label: Thema
+    type: toggle
+    default: false
+    text:
+      - Licht     # false
+      - Donker    # true
+    width: 1/2

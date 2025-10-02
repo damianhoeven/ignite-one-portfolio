@@ -1,0 +1,109 @@
+Title: Website project
+
+----
+
+Blocks: 
+
+----
+
+Services: Webdesign, Branding
+
+----
+
+Client: Test 2
+
+----
+
+Link: 
+
+----
+
+Year: 2025
+
+----
+
+Featured: true
+
+----
+
+Tags: 
+
+----
+
+Pageimage: - file://ibjlputm2siuiz8r
+
+----
+
+Text: test
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Category: Webdesign
+
+----
+
+Intro: Dit is de introductie tekst voor het website project
+
+----
+
+Uuid: rsa9idmbh2jr2zsu

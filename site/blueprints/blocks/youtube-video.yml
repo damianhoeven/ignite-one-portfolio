@@ -1,0 +1,82 @@
+name: YouTube video
+icon: video
+preview: fields
+
+fields:
+  url:
+    label: YouTube URL of ID
+    type: url
+    required: true
+    placeholder: https://youtu.be/dQw4w9WgXcQ
+
+  privacy:
+    label: Privacy (youtube-nocookie.com)
+    type: toggle
+    default: true
+    text: [Uit, Aan]
+    width: 1/2
+
+  autoplay:
+    label: Autoplay (mute vereist op mobiel)
+    type: toggle
+    default: false
+    text: [Uit, Aan]
+    width: 1/2
+
+  mute:
+    label: Mute
+    type: toggle
+    default: true
+    text: [Uit, Aan]
+    width: 1/2
+
+  controls:
+    label: Controls tonen
+    type: toggle
+    default: true
+    text: [Uit, Aan]
+    width: 1/2
+
+  loop:
+    label: Loop
+    type: toggle
+    default: false
+    text: [Uit, Aan]
+    width: 1/2
+
+  start:
+    label: Start (sec)
+    type: number
+    min: 0
+    width: 1/2
+
+  end:
+    label: Eind (sec, optioneel)
+    type: number
+    min: 0
+    width: 1/2
+
+  # Optionele styling toggles, zoals je eerder gebruikte
+  paddingBottom:
+    label: Padding bottom
+    type: toggle
+    default: false
+    text: [Uit, Aan]
+    width: 1/2
+
+  colorTheme:
+    label: Thema
+    type: toggle
+    default: false
+    text: [Licht, Donker] # false=licht, true=donker
+    width: 1/2
+
+  caption:
+    label: Bijschrift
+    type: writer
+    nodes:
+      - paragraph
+      - link
+    marks:
+      - bold
+      - italic

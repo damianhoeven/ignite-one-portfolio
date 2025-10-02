@@ -1,0 +1,15 @@
+title: Instellingen
+
+options:
+  delete: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+
+sections:
+  logos:
+    label: Clients
+    type: files
+    template: image
+    layout: cards
+    help: Upload hier de logo’s die getoond worden in de marquee op de homepage

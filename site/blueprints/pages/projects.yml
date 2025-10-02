@@ -1,0 +1,29 @@
+title: Projecten
+
+tabs:
+  content:
+    label: Content
+    icon: home
+    sections:
+      drafts:
+        headline: Drafts
+        type: pages
+        template: project
+        status: drafts
+        help: Altijd een thumbnail uploaden
+        image:
+          ratio: 4/5
+          cover: true
+      published:
+        headline: Published
+        type: pages
+        layout: cards
+        template: project
+        info: "{{ page.category }}"
+        status: published
+        limit: 5
+        image:
+          ratio: 4/5
+          cover: true
+  
+  seo: seo/page

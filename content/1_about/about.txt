@@ -1,0 +1,92 @@
+Title: About
+
+----
+
+Blocks: 
+
+----
+
+Pagetitle:
+
+De *vonk* achter
+Ignite One
+
+----
+
+Subtitle: Eén vonk. Eén verhaal. Eén brand
+
+----
+
+Pageimage: 
+
+----
+
+Headerrowsmall: false
+
+----
+
+Colortheme: false
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: dep6jnlfkll81nsu

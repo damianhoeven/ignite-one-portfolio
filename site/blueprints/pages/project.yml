@@ -1,0 +1,100 @@
+title: Project
+
+tabs:
+  page-content:
+    label: Content
+    icon: text
+    fields:
+      blocks:
+        label: Pagina inhoud
+        type: blocks
+        pretty: true
+        fieldsets:
+          - richtext
+          - quote
+          - image-big
+          - image-fullscreen
+          - youtube-video
+          - multi-video
+
+  page-settings:
+    label: Pagina instellingen
+    icon: settings
+    columns:
+      - width: 2/3
+        fields:
+          subTitle:
+            label: Sub titel
+            type: text
+
+          text:
+            label: Project description
+            type: textarea
+
+          pageImage:
+            label: Pagina afbeelding
+            type: files
+            multiple: false
+            max: 1
+            required: true
+            accept:
+              mime: [image/jpeg, image/png, image/webp]
+            layout: cards
+            size: large
+            image:
+              ratio: 16/9
+              cover: true
+            width: 1/2
+
+          clientLogo:
+            label: Klant logo
+            type: files
+            multiple: false
+            max: 1
+            required: true
+            accept:
+                mime: image/png      # alleen PNG
+                minwidth: 480        # minimaal 480 px breed
+            layout: cards
+            size: small
+            width: 1/2
+
+      - width: 1/3
+        fields:
+          services:
+            label: Services
+            type: multiselect
+            required: true
+            options:
+              - Webdesign
+              - Videografie
+              - Branding
+              - Animatie
+            width: 1/2
+
+          client:
+            label: Client
+            type: text
+            icon: user
+            required: true
+            width: 1/2
+
+          link:
+            label: Externe link
+            type: url
+            width: 1/2
+
+          year:
+            label: Jaar
+            type: number
+            min: 2000
+            before: Finished
+            width: 1/2
+            required: true
+
+          featured:
+            label: Uitgelicht
+            type: toggle
+            width: 1/2
+
+  seo: seo/page

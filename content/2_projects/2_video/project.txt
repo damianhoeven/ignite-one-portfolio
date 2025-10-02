@@ -1,0 +1,196 @@
+Title: Video project
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "textcol1": "<h2>Website design</h2><p>De website is opgezet met een strak en modern ontwerp waarin rust, overzicht en beleving centraal staan. Kleuren, typografie en beeld zijn afgestemd op de professionele uitstraling van Barchitect.</p>",
+            "textcol2": "<h2>Video’s</h2><p>De video’s versterken het verhaal achter Barchitect en brengen de visie en projecten tot leven op een inspirerende manier.</p>",
+            "textcol3": "<h2>Consistente branding</h2><p>Door website en video’s in één lijn te ontwikkelen, ontstaat een heldere en samenhangende merkidentiteit die vertrouwen en kwaliteit uitstraalt.</p>",
+            "colortheme": "false",
+            "paddingbottom": "false"
+        },
+        "id": "8068bb67-3595-4800-9057-a031689d4110",
+        "isHidden": false,
+        "type": "richtext-3-col"
+    },
+    {
+        "content": {
+            "location": "kirby",
+            "image": [
+                "file://lzrlzrbucwzocgzs"
+            ],
+            "src": "",
+            "alt": "",
+            "paddingbottom": "false",
+            "colortheme": "false"
+        },
+        "id": "63b8a1d7-29c4-492d-94b7-5e9e4461148d",
+        "isHidden": false,
+        "type": "image-big"
+    },
+    {
+        "content": {
+            "text": "<h2>Projecttitel </h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sapien id justo fermentum vulputate. Sed posuere, arcu sit amet pulvinar elementum, metus sapien volutpat tortor, nec aliquet arcu turpis non augue.<br></p><h3>Subkop <em>italic</em></h3><p>Curabitur non odio nisl. Donec tristique, risus a convallis congue, diam orci blandit lorem, vitae tempus sem augue ac massa. Phasellus iaculis venenatis magna vel finibus.<br></p><h4>Nog een alinea</h4><p>Praesent vitae velit eu lorem ultrices rutrum. Quisque luctus, urna in interdum mattis, urna orci vehicula risus, non suscipit sapien augue sed arcu. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus.</p>",
+            "colortheme": "false",
+            "paddingbottom": "true",
+            "columns": "2 kolommen",
+            "text2": "",
+            "text3": ""
+        },
+        "id": "9bc69b08-fc6e-418a-8b7a-d39b45285abc",
+        "isHidden": false,
+        "type": "richtext"
+    },
+    {
+        "content": {
+            "location": "kirby",
+            "image": [
+                "file://tufrqg2ik0laf8zz"
+            ],
+            "src": "",
+            "alt": ""
+        },
+        "id": "c70c6449-04d2-4657-b750-ae2dd64a330a",
+        "isHidden": false,
+        "type": "image-fullscreen"
+    },
+    {
+        "content": {
+            "videos": [
+                "file://i8y3s82scndyhhht",
+                "file://xxm6utbcaka1abkc",
+                "file://szsfrti39mwgaqfh"
+            ],
+            "ratio": "16:9",
+            "paddingbottom": "false",
+            "colortheme": "false"
+        },
+        "id": "5f3c5a1f-c85b-472d-aaac-123d2750aa66",
+        "isHidden": false,
+        "type": "multi-video"
+    },
+    {
+        "content": {
+            "quote": "<p>“Professioneel, creatief en precies de uitstraling die we zochten.”</p>",
+            "name": "Barry van Koppen",
+            "company": "Barchitect",
+            "colortheme": "false",
+            "paddingbottom": "true"
+        },
+        "id": "b08ec0ea-6789-445f-8eaa-2de27eb01aad",
+        "isHidden": false,
+        "type": "quote"
+    }
+]
+
+----
+
+Subtitle: Architectuur met karakter, vertaald naar web en video
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac felis mi. Fusce nec volutpat elit, quis tempus ante. Phasellus sed laoreet mi. Mauris sit amet massa mauris. Sed ut interdum dui. Etiam bibendum varius fringilla. Proin eu risus ultricies nisl mattis tempus at id nisl. Sed malesuada augue eget quam cursus pharetra. Phasellus orci lorem, luctus in semper lacinia, ullamcorper non lectus.
+
+----
+
+Pageimage: - file://lzrlzrbucwzocgzs
+
+----
+
+Clientlogo: - file://6wtrgbrjmsd5wvf8
+
+----
+
+Services: Videografie
+
+----
+
+Client: Test 1
+
+----
+
+Link: https://google.com/
+
+----
+
+Year: 2025
+
+----
+
+Featured: true
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Tags: 
+
+----
+
+Intro: Dit is de introductie tekst
+
+----
+
+Uuid: gh47a1ut5ir70sfw

@@ -1,0 +1,12 @@
+title: Contact
+
+tabs:
+  page-content:
+    label: Content
+    icon: text
+
+  page-settings:
+    label: Pagina instellingen
+    icon: settings
+
+  seo: seo/page

@@ -1,0 +1,61 @@
+title: Content pagina
+
+tabs:
+  page-content:
+    label: Content
+    icon: text
+    fields:
+      blocks:
+        label: Pagina inhoud
+        type: blocks
+        pretty: true
+        fieldsets:
+          - richtext
+          - quote
+          - image-big
+          - image-fullscreen
+          - youtube-video
+          - multi-video
+
+  page-settings:
+    label: Pagina instellingen
+    icon: settings
+    fields:
+      subTitle:
+        label: Sub titel
+        type: text
+        width: 1/2
+
+      pageImage:
+        label: Pagina afbeelding
+        type: files
+        multiple: false
+        max: 1
+        accept:
+          mime: [image/jpeg, image/png, image/webp]
+        layout: cards
+        size: large
+        image:
+          ratio: 16/9
+          cover: true
+        width: 1/2
+
+      headerRowSmall:
+        label: Header size
+        type: toggle
+        text:
+          - Normaal
+          - Small
+        default: false
+        width: 1/2
+
+      colorTheme:
+        label: Thema
+        type: toggle
+        default: false
+        text:
+          - Licht
+          - Donker
+        width: 1/2
+
+  seo: seo/page

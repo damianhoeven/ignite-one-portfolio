@@ -1,0 +1,38 @@
+name: Quote
+icon: quote
+preview: fields
+fields:
+  quote:
+    label: Quote
+    type: writer
+    placeholder: Schrijf hier je quote…
+    nodes:
+      - paragraph
+    marks:
+      - italic
+      - "|"
+      - clear
+
+  name:
+    label: Naam
+    type: text
+    width: 1/2
+
+  company:
+    label: Bedrijf
+    type: text
+    width: 1/2
+
+  colorTheme:
+    label: Thema
+    type: toggle
+    default: false
+    text: [Licht, Donker]
+    width: 1/2
+
+  paddingBottom:
+    label: Padding bottom
+    type: toggle
+    default: false
+    text: [Uit, Aan]
+    width: 1/2

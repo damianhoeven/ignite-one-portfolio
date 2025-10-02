@@ -1,0 +1,128 @@
+Title: Home
+
+----
+
+Herotitle:
+
+One *spark*
+infinite reach
+
+----
+
+Heroparagraph:
+
+Merkverhalen die voelen,
+vlammen & blijven hangen
+Jouw merk. Jouw verhaal
+
+----
+
+Skillstitle: Skills
+
+----
+
+Skillslist:
+
+- 
+  label: Branding
+  skillpage: [ ]
+- 
+  label: Videografie
+  skillpage: [ ]
+- 
+  label: Webdesign-en development
+  skillpage: [ ]
+- 
+  label: 'Animatie (2D & 3D)'
+  skillpage: [ ]
+
+----
+
+Abouttitle: Over mij
+
+----
+
+Aboutintro: Hey, ik ben Damian en werk als freelancer onder de naam Ignite One samen met merken om strategieën te laten  vlammen, unieke designs te creëren en ervaringen te bouwen die echt impact maken.
+
+----
+
+Projectstitle:
+
+Projecten
+waar ik *trots*
+op ben
+
+----
+
+Projectspages:
+
+- 
+  project:
+    - page://rsa9idmbh2jr2zsu
+  label: ""
+  url:
+    - page://gh47a1ut5ir70sfw
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: {{ title }} - {{ site.title }}
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Cropogimage: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: dnajdzhzhztusw6r
