@@ -2,9 +2,9 @@
 
 return [
   'debug' => true,
-  'url'   => 'http://ignite-one-portfolio.test/', // of je dev-domein/poort
+  'url'   => 'http://ignite-one-portfolio.test',
 
-  // Lokaal wil je caching vaak uit laten
+  // Lokaal meestal geen page cache
   'cache' => [
     'pages' => [
       'active' => false,

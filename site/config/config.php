@@ -10,13 +10,12 @@ return [
 
   // Thumbs: algemene defaults
   'thumbs' => [
-    'driver'  => 'gd',  // kun je per omgeving overschrijven als server Imagick heeft
+    'driver'  => 'gd',  // evt. per omgeving overschrijven als server Imagick heeft
     'quality' => 82,
     'format'  => 'jpg',
-    // 'upscale' => true, // laat uit tenzij je het overal wilt
   ],
 
-  // Hooks / runtime afgeleid gedrag – geldt voor alle omgevingen
+  // Hooks / runtime gedrag – geldt voor alle omgevingen
   'ready' => function ($kirby) {
     return [
       'pechente.kirby-admin-bar' => [

@@ -1,50 +1,41 @@
-# System files
-# ------------
-
-Icon
+# ——— OS / systeem ————————————————————————————————
 .DS_Store
+Thumbs.db
+Icon?
 
-# Temporary files
-# ---------------
-
+# ——— Kirby: gegenereerde mappen/bestanden ———————————
 /media/*
 !/media/index.html
-
-# Lock files
-# ---------------
-
-.lock
-
-# Editors
-# (sensitive workspace files)
-# ---------------------------
-*.sublime-workspace
-/.vscode
-/.idea
-
-# -------------SECURITY-------------
-# NEVER publish these files via Git!
-# -------------SECURITY-------------
-
-# Cache Files
-# ---------------
 
 /site/cache/*
 !/site/cache/index.html
 
-# Accounts
-# ---------------
-
-/site/accounts/*
-!/site/accounts/index.html
-
-# Sessions
-# ---------------
-
 /site/sessions/*
 !/site/sessions/index.html
 
-# License
-# ---------------
+/site/logs/*
+!/site/logs/index.html
 
+# (optioneel) als je deze map gebruikt
+# /storage/*
+# !/storage/index.html
+
+# Lockfile (content locking)
+.lock
+
+# Kirby/Site licentie (niet in Git)
 /site/config/.license
+
+# ——— Secrets / env ———————————————————————————————
+.env
+.env.*
+
+# ——— Front-end build / tooling (indien van toepassing) ———
+node_modules/
+dist/
+.build/
+*.map
+
+# ——— Editors / IDE ———————————————————————————————
+.vscode/
+.idea/
