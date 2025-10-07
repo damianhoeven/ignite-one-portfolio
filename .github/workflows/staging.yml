@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.ftp_password_staging }}
           protocol: ftps
           # port: 21  # alleen invullen als jouw host iets anders vereist
-          server-dir: /domains/staging.igniteone.nl/public_html/  # trailing slash!
+          server-dir: /domains/igniteone.nl/public_html/staging/  # trailing slash!
 
           # Eerste keer testen? Zet aan, bekijk de logs, haal daarna weg:
           # dry-run: true
