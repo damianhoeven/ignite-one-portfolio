@@ -1,0 +1,45 @@
+name: Video full screen
+icon: video
+preview: fields
+
+fields:
+  location:
+    label: field.blocks.image.location
+    type: radio
+    columns: 2
+    default: "kirby"
+    required: true
+    options:
+      kirby: "{{ t('field.blocks.image.location.internal') }}"
+      web: "{{ t('field.blocks.image.location.external') }}"
+
+  videoFile:
+    label: Video (bestand)
+    type: files
+    multiple: false
+    # Toon alleen video's in de select modal:
+    query: model.files.filterBy("type", "video")
+    # (alternatief op extensie)
+    # query: model.files.filterBy("extension", "in", ["mp4", "webm"])
+    uploads:
+      template: blocks/video
+    accept:
+      - video/mp4
+      - video/webm
+    when:
+      location: kirby
+
+  videoUrl:
+    label: Video URL
+    type: url
+    when:
+      location: web
+
+  poster:
+    label: Poster (fallback)
+    type: files
+    multiple: false
+    # Toon alleen afbeeldingen voor de poster:
+    query: model.images
+    accept:
+      - image/*    # of specifieker: image/jpeg, image/png, image/webp

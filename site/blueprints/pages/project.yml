@@ -11,9 +11,11 @@ tabs:
         pretty: true
         fieldsets:
           - richtext
+          - richtext-3-col
           - quote
           - image-big
           - image-fullscreen
+          - video-fullscreen
           - youtube-video
           - multi-video
 

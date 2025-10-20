@@ -16,7 +16,7 @@
 
             <header class="section home-hero" data-scroll-section data-target="#projects">
                 <div class="overlay hero-video-wrap hero-scroll-animation playpauze" data-scroll data-scroll-speed="-3">
-                    <video autoplay muted loop><source src="<?= url('assets/videos/hero-bg-video.mp4') ?>" type="video/mp4"></video>
+                    <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="/assets/images/hero-bg-poster.jpg" src="/assets/videos/hero-bg-video.mp4"></video>
                 </div>
 
                 <div class="container" data-scroll data-scroll-speed="-5">

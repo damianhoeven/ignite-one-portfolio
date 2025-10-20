@@ -365,8 +365,8 @@ function delay(n) {
  */
 function initScript() {
   // select('body').classList.remove('is-loading');
-  // initWindowInnerheight();
   // initCheckTouchDevice();
+  initWindowInnerheight();
   initBtnMenuOpenClose();
   // initLazyLoad();
   initPlayVideoInview();

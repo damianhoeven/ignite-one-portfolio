@@ -22,7 +22,7 @@
                         </div>
 
                         <?php if ($page->link()->isNotEmpty()): ?>
-                            <div class="flex-col">
+                            <div class="flex-col once-in">
                                 <a href="<?= $page->link() ?>" title="Bekijk website" target="_blank">
                                     <span>Bekijk website</span>
                                     <svg class="arrow" stroke-width="0" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">

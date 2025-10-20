@@ -15,8 +15,7 @@ if (!$block->colorTheme()->toBool())   $classes[] = 'theme-light';
 // layout-classes voor row
 $rowClasses = ['row'];
 if ($count === 2 || $count === 3) $rowClasses[] = 'split';
-
-$rowStyle = ($count === 3) ? ' style="--columns: 3;"' : '';
+if ($count === 3) $rowClasses[] = 'three-columns'; // alleen bij 3 video's
 
 // ratio parsen (fallback 16:9)
 $ratioStr = $block->ratio()->or('16:9')->value();
@@ -30,7 +29,7 @@ $aspect = $rw . ' / ' . $rh;
 ?>
 <section class="<?= implode(' ', $classes) ?>" data-scroll-section>
   <div class="container">
-    <div class="<?= implode(' ', $rowClasses) ?>"<?= $rowStyle ?>>
+    <div class="<?= implode(' ', $rowClasses) ?>">
       <?php foreach ($files as $video): ?>
         <div class="col">
           <figure class="video-embed playpauze" style="aspect-ratio: <?= $aspect ?>;">

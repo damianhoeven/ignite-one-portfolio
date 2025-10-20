@@ -54,36 +54,37 @@ Blocks:
             "src": "",
             "alt": ""
         },
-        "id": "c70c6449-04d2-4657-b750-ae2dd64a330a",
+        "id": "1b034b32-43eb-49b8-ae4d-75cf57e0e4f5",
         "isHidden": false,
         "type": "image-fullscreen"
     },
     {
         "content": {
             "videos": [
-                "file://i8y3s82scndyhhht",
-                "file://xxm6utbcaka1abkc",
-                "file://szsfrti39mwgaqfh"
+                "file://o0ciri7ipzazmbuh",
+                "file://pdbs7xgddd0rgvpj",
+                "file://olcm2rvqdwaqqkt7"
             ],
             "ratio": "16:9",
-            "paddingbottom": "false",
+            "paddingbottom": "true",
             "colortheme": "false"
         },
-        "id": "5f3c5a1f-c85b-472d-aaac-123d2750aa66",
+        "id": "4fa5527b-3b5f-4f10-9a20-750ce9b9f4ea",
         "isHidden": false,
         "type": "multi-video"
     },
     {
         "content": {
-            "quote": "<p>“Professioneel, creatief en precies de uitstraling die we zochten.”</p>",
-            "name": "Barry van Koppen",
-            "company": "Barchitect",
-            "colortheme": "false",
-            "paddingbottom": "true"
+            "location": "kirby",
+            "videofile": [
+                "file://o0ciri7ipzazmbuh"
+            ],
+            "videourl": "",
+            "poster": []
         },
-        "id": "b08ec0ea-6789-445f-8eaa-2de27eb01aad",
+        "id": "646ae3d8-6d01-4e1f-913c-8e9471cfbb02",
         "isHidden": false,
-        "type": "quote"
+        "type": "video-fullscreen"
     }
 ]
 
