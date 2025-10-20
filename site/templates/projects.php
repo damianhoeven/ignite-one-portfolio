@@ -32,8 +32,18 @@
                     </li>
 
                     <?php foreach (collection('projects')->sortBy('year', 'desc', 'title', 'asc') as $project): ?>
+                        <?php
+                            $img = $project->pageImage()->toFile();
+                            $thumb = $img->crop(800);
+                            $alt = $img ? $img->alt()->or($project->title())->esc() : $project->title()->esc();    
+                        ?>
+
                         <li class="project-row">
                             <a class="project-list-item" href="<?= $project->url() ?>">
+                                <?php if ($img): ?>    
+                                    <img class="mobile-thumb" src="<?= $thumb->url() ?>" alt="<?= $alt ?>" loading="lazy" decoding="async">
+                                <?php endif; ?>
+
                                 <div class="row-grid">                          
                                     <h2><?= $project->title() ?></h2>
                                     
