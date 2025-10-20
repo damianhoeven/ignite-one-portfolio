@@ -3,6 +3,7 @@
 return [
   'debug' => false,
   'url'   => 'https://igniteone.nl',
+  'app.noindex' => false,
 
   'cache' => [
     'pages' => [
