@@ -1,7 +1,7 @@
 <?php
 
 return function() {
-    return page('projects')
+    return page('projecten')
         ->children()
         ->listed();
 };

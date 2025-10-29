@@ -55,6 +55,7 @@
   font-display: swap;
 }
 :root {
+  interpolate-size: allow-keywords;
   --color-orange: #FF4B1C;
   --color-orange-dark: #2B0E06;
   --color-orange-light: #F8F3EF;
@@ -63,6 +64,7 @@
   --color-dark-gray: #212121;
   --color-dark: #110B0B;
   --color-border: #3B3B3B;
+  --color-border-light: #D8D8D8;
   --color-orange-dark-rgb: 17, 11, 11;
   --color-orange-rgb: 255, 75, 28;
   --title-size: clamp(4em, 7.5vw, 7.5em);
@@ -382,6 +384,10 @@ body.theme-light {
 
 .serif {
   font-family: var(--font-eiko);
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -1205,7 +1211,7 @@ a {
   }
 }
 .text p {
-  font: 400 1em/1.5 var(--font-mori);
+  font: 400 1em/1.8 var(--font-mori);
   margin: 0 0 1em;
 }
 @media (min-width: 720px) {
@@ -2136,6 +2142,17 @@ a {
 .mission-vision-section {
   padding: var(--section-padding) 0;
 }
+.mission-vision-section .text.w-650 {
+  max-width: 650px;
+}
+.mission-vision-section .row {
+  --gap: var(--container-padding);
+  gap: var(--container-padding) var(--gap);
+}
+.mission-vision-section .row:nth-child(1) {
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: var(--section-padding);
+}
 .mission-vision-section .row:nth-child(1) .flex-col {
   flex-direction: column;
   justify-content: space-between;
@@ -2148,6 +2165,121 @@ a {
   .mission-vision-section .row:nth-child(1) .flex-col .row .col {
     width: calc(99.999% / var(--columns) - var(--gap) * (var(--columns) - 1) / var(--columns));
   }
+}
+
+.help-section {
+  padding: 0 0 var(--section-padding);
+}
+.help-section.w-border .row.third {
+  border-bottom: 1px solid var(--color-border-light);
+}
+.help-section .row.third {
+  padding-bottom: var(--section-padding);
+}
+.help-section .help-step-wrapper {
+  padding: var(--section-padding-small) 0;
+}
+.help-section .help-step-wrapper:nth-child(1) {
+  padding-top: 0;
+}
+.help-section .help-step-wrapper .flex-col:nth-child(1) {
+  gap: 1em;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .help-section .help-step-wrapper .flex-col:nth-child(1) {
+    width: min(33.333%, 520px);
+  }
+}
+.help-section .help-step-wrapper .flex-col {
+  width: 100%;
+}
+.help-section .help-step-wrapper .number {
+  flex-shrink: 0;
+  width: var(--section-padding-medium);
+  font: 300 clamp(1.5em, 2.25vw, 2em)/1 var(--font-eiko-italic);
+}
+.help-section .help-step-wrapper h3 {
+  font: 400 clamp(1.5em, 2.25vw, 2em)/1.2 var(--font-mori);
+}
+.help-section .help-step-wrapper p {
+  font: 400 clamp(1em, 2vw, 1.2em)/1.8 var(--font-mori);
+}
+
+.accordion {
+  padding: var(--section-padding-small) 0;
+  border-bottom: 1px solid Var(--color-border-light);
+}
+.accordion:first-child {
+  padding-top: 0;
+}
+.accordion .accordion-number {
+  flex-shrink: 0;
+  grid-area: num;
+  width: min(6vw, 6em);
+  font: 300 clamp(1.5em, 2.25vw, 2em)/1 var(--font-eiko-italic);
+}
+.accordion h3 {
+  grid-area: title;
+  font: 400 clamp(1.5em, 2.25vw, 2em)/1.2 var(--font-mori);
+}
+.accordion small {
+  display: inline-block;
+  margin: 0 0 0.125em 0.5em;
+  color: var(--color-light-gray);
+  font: 400 clamp(1.125em, 1.3vw, 1.3em)/1.2 var(--font-mori);
+}
+.accordion svg {
+  width: 1em;
+  flex-shrink: 0;
+  grid-area: icon;
+  justify-self: end;
+  fill: var(--color-dark);
+  transition: var(--animation-primary);
+  margin: 0 0 0 1em;
+}
+@media (min-width: 1024px) {
+  .accordion svg {
+    width: auto;
+  }
+}
+.accordion p {
+  grid-area: body;
+  margin-top: 1.5em;
+  padding-right: 3em;
+  font: 400 clamp(1em, 2vw, 1.2em)/1.8 var(--font-mori);
+}
+.accordion details {
+  outline: 0;
+}
+.accordion details summary {
+  outline: 0;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  justify-content: space-between;
+}
+.accordion details summary::-webkit-details-marker {
+  display: none;
+}
+.accordion details summary .title-row {
+  gap: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.accordion details::details-content {
+  height: 0;
+  overflow: hidden;
+  transition: var(--animation-primary);
+  transition-behavior: allow-discrete;
+}
+.accordion details[open] summary svg {
+  transform: rotate(135deg);
+}
+.accordion details[open]::details-content {
+  height: auto;
 }
 
 .connect-section {

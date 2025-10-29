@@ -13,7 +13,7 @@ tabs:
             templates:
               - home
               - about
-              - projects
+              - projecten
               - contact
             sortBy: title asc
             info: "{{ page.id }}"
@@ -21,7 +21,7 @@ tabs:
           projectsPublished:
             label: Projecten (Online)
             type: pages
-            parent: site.find("projects")   # wijzig indien jouw parent anders heet
+            parent: site.find("projecten")   # wijzig indien jouw parent anders heet
             templates: [project]
             status: listed, unlisted                      # listed + unlisted (geen drafts)
             sortBy: date desc
@@ -43,7 +43,7 @@ tabs:
           projectsDrafts:
             label: Projecten (Concepten)
             type: pages
-            parent: site.find("projects")
+            parent: site.find("projecten")
             templates: [project]
             status: draft
             sortBy: modified desc
@@ -54,7 +54,7 @@ tabs:
             type: pages
             status: all
             # Alle top-level pagina's behalve de bekende templates
-            query: site.children.filterBy("template", "not in", ["home","about","projects","contact","project"])
+            query: site.children.filterBy("template", "not in", ["home","about","projecten","contact","project"])
             sortBy: title asc
             empty: Geen ongecategoriseerde pagina's gevonden.
             create:
@@ -86,7 +86,7 @@ tabs:
       projects:
         label: Projecten
         type: pages
-        parent: site.find("projects")
+        parent: site.find("projecten")
         templates: [project]
         status: all
         sortBy: date desc
@@ -96,7 +96,7 @@ tabs:
         label: Content pagina's
         type: pages
         status: all
-        query: site.children.filterBy("template", "not in", ["home", "about", "projects", "contact", "project"])
+        query: site.children.filterBy("template", "not in", ["home", "about", "projecten", "contact", "project"])
         sortBy: title asc
         info: "/{{ page.slug }}"
         create:
@@ -106,7 +106,7 @@ tabs:
         label: Content pagina's (concepten)
         type: pages
         status: draft
-        query: site.drafts.filterBy("template", "not in", ["home","about","projects","contact","project"])
+        query: site.drafts.filterBy("template", "not in", ["home","about","projecten","contact","project"])
         sortBy: modified desc
         empty: Geen concepten gevonden.
         info: "/{{ page.slug }}"
